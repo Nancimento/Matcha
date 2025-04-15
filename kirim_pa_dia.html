@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Spesial untuk Tiara Pecinta Matcha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e1e1;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d50000;
+        }
+        .letter {
+            background-color: #fff;
+            border: 1px solid #d50000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #d50000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            transition: transform 0.5s;
+        }
+        button:hover {
+            background-color: #b00000;
+        }
+    </style>
+    <script>
+        function moveButton() {
+            const button = document.getElementById("thinkButton");
+            button.style.transform = "translateX(200px)"; // Menggerakkan tombol ke kanan
+            button.disabled = true; // Menonaktifkan tombol
+        }
+
+        function showMessage() {
+            alert("Anjayyy, butul ee btmng ahaha");
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Pesan Spesial untuk Tiara Pecinta Matcha</h1>
+    <div class="letter">
+        <h2>Baca ee!!</h2>
+        <p>Dear Tiara Pecinta Matcha, Mang eakk</p>
+        <p>kt sbnarnya suka mo ba eksplor tampa-tampa nongki yang baru, cuma kendala nda ada guide/tmng yang tau-tau banya tampa.</p>
+        <p>Nah krn kt tau nn pngba jlg, kt mo minta partisipasi dari nn for btmng dg kt mo cri tampa nongki/cemilan ato mknn appun itu yang enakk</p>
+        <p>Mar, klu nn nimau npp juga kt nda paksa (padahal iyo agak ba paksa,wkwk).</p>
+    </div>
+
+    <h3>Jadi bgimana, pilih ne?</h3>
+    <button id="yesButton" onclick="showMessage()">Iyo, bolehh!</button>
+    <button id="thinkButton" onclick="moveButton()"> Kt mo pikir" dulu ne.</button>
+
+</body>
+</html>
